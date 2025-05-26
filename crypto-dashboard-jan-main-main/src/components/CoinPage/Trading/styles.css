@@ -1,0 +1,60 @@
+.trading-container {
+  background-color: var(--darkgrey);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  max-width: 800px;
+}
+
+.trading-info {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: var(--black);
+  border-radius: 0.5rem;
+}
+
+.balance-text,
+.holdings-text,
+.price-text {
+  color: var(--white) !important;
+  margin: 0.5rem 0 !important;
+}
+
+.trading-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.amount-input {
+  background-color: var(--black);
+  border-radius: 0.5rem;
+}
+
+.amount-input input {
+  color: var(--white) !important;
+}
+
+.amount-input label {
+  color: var(--grey) !important;
+}
+
+.buy-button {
+  background-color: var(--green) !important;
+  color: var(--white) !important;
+}
+
+.sell-button {
+  background-color: var(--red) !important;
+  color: var(--white) !important;
+}
+
+.buy-button:hover {
+  background-color: #4fa85c !important;
+}
+
+.sell-button:hover {
+  background-color: #d63737 !important;
+} 

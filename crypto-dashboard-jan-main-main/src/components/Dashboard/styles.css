@@ -1,0 +1,12 @@
+.dashboard-container {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.grid-container {
+  background-color: var(--card-bg);
+}
+
+.list-container {
+  background-color: var(--card-bg);
+} 

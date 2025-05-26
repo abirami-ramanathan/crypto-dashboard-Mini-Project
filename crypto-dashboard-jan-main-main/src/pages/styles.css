@@ -1,0 +1,302 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.login-box {
+  background-color: var(--darkgrey);
+  padding: 2rem;
+  border-radius: 1rem;
+  min-width: 300px;
+  box-shadow: 0px 0px 10px rgba(58, 128, 233, 0.2);
+}
+
+.login-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-input {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1rem;
+  outline: none;
+}
+
+.login-input:focus {
+  border: 1px solid var(--blue);
+}
+
+/* Portfolio Styles */
+.portfolio-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.portfolio-heading {
+  margin-bottom: 2rem !important;
+  color: var(--white) !important;
+}
+
+.portfolio-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stats-paper {
+  padding: 1.5rem !important;
+  background-color: var(--darkgrey) !important;
+  color: var(--white) !important;
+  text-align: center;
+}
+
+.holdings-heading {
+  margin: 2rem 0 1rem !important;
+  color: var(--white) !important;
+}
+
+.holdings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.holding-paper {
+  padding: 1rem !important;
+  background-color: var(--darkgrey) !important;
+  color: var(--white) !important;
+}
+
+.holding-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.coin-image {
+  width: 40px;
+  height: 40px;
+}
+
+.holding-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.no-coins {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: var(--grey) !important;
+  padding: 2rem;
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--darkgrey);
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.sell-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.sell-input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  background-color: var(--darkgrey);
+  color: var(--white);
+}
+
+.sell-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--red);
+  color: white;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.sell-button:hover {
+  background-color: darkred;
+}
+
+@media screen and (max-width: 800px) {
+  .login-box {
+    width: 90%;
+    margin: 0 1rem;
+  }
+
+  .portfolio-container {
+    padding: 1rem;
+  }
+
+  .portfolio-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .holdings-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    grid-template-columns: 1fr;
+  }
+
+  .sell-controls {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+}
+
+/* Transaction History Styles */
+.transaction-container {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--white);
+}
+
+.transaction-heading {
+  margin-bottom: 2rem !important;
+  color: var(--white) !important;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transaction-paper {
+  padding: 1rem !important;
+  background-color: var(--darkgrey) !important;
+  color: var(--white) !important;
+  transition: transform 0.3s ease-in-out !important;
+}
+
+.transaction-paper:hover {
+  transform: translateY(-2px);
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.transaction-date {
+  color: var(--grey) !important;
+  margin-top: 0.5rem !important;
+}
+
+.no-transactions {
+  text-align: center;
+  color: var(--grey) !important;
+  padding: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .transaction-container {
+    padding: 1rem;
+  }
+}
+
+.transaction-history {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.transaction-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transaction-item {
+  background: var(--darkgrey);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.coin-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.transaction-type {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.transaction-type.buy {
+  background-color: var(--green);
+  color: white;
+}
+
+.transaction-type.sell {
+  background-color: var(--red);
+  color: white;
+}
+
+.transaction-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--grey);
+}
+
+.refresh-button {
+  background-color: var(--blue);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.refresh-button:hover {
+  background-color: var(--darkblue);
+} 
